@@ -18,16 +18,16 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit from common AOSP configuration
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit from common Banana configuration
+$(call inherit-product, vendor/banana/config/common_full_phone.mk)
 
 # Inherit from surya device
 $(call inherit-product, device/xiaomi/surya/device.mk)
 # Maintainer
-PEX_MAINTAINER := Kirisaki_VK
+BANANA_MAINTAINER := Kirisaki_VK
 
 # Device identifier
-PRODUCT_NAME := aosp_surya
+PRODUCT_NAME := banana_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X3
